@@ -3,7 +3,7 @@ import Ajv, {
   Format,
   ErrorObject,
   ValidateFunction,
-} from 'ajv';
+} from 'ajv/dist/2019';
 import { IJsonSchema, OpenAPIV2, OpenAPIV3 } from 'openapi-types';
 
 const LOCAL_DEFINITION_REGEX = /^#\/([^\/]+)\/([^\/]+)$/;
