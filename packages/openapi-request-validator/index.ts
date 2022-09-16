@@ -5,7 +5,7 @@ import Ajv, {
   ErrorObject,
   KeywordDefinition,
   Options,
-} from 'ajv';
+} from 'ajv/dist/2019';
 import addFormats from 'ajv-formats';
 import { convertParametersToJSONSchema } from 'openapi-jsonschema-parameters';
 import { IJsonSchema, OpenAPI, OpenAPIV3 } from 'openapi-types';
