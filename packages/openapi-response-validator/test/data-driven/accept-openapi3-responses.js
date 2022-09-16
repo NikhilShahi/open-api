@@ -24,5 +24,7 @@ module.exports = {
 
   inputResponseBody: { foo: 'asdf' },
 
+  inputHeaders: { 'content-type': 'application/json' },
+
   expectedValidationError: void 0,
 };

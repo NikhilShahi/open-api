@@ -2,14 +2,18 @@ module.exports = {
   constructorArgs: {
     responses: {
       200: {
-        schema: {
-          type: 'object',
-          properties: {
-            foo: {
-              type: 'string',
+        content: {
+          'application/json': {
+            schema: {
+              type: 'object',
+              properties: {
+                foo: {
+                  type: 'string',
+                },
+              },
             },
-          },
-        },
+          }
+        }
       },
 
       400: {},

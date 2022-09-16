@@ -21,7 +21,8 @@ describe(require('../package.json').name, () => {
       const instance = new Sut(fixture.constructorArgs);
       const error = instance.validateResponse(
         fixture.inputStatusCode,
-        fixture.inputResponseBody
+        fixture.inputResponseBody,
+        fixture.inputHeaders ?? {}
       );
       expect(error).to.eql(fixture.expectedValidationError);
     });

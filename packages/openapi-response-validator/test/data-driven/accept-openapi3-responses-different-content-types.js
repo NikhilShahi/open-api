@@ -19,5 +19,7 @@ module.exports = {
 
   inputResponseBody: '# documentation\n',
 
+  inputHeaders: { 'content-type': 'text/markdown' },
+
   expectedValidationError: void 0,
 };
