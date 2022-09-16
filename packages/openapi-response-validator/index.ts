@@ -164,8 +164,8 @@ export default class OpenAPIResponseValidator
 
     if (typeof validator !== 'function') {
       let message = '';
-      if (contentType) {
-        message = 'Unsupported Content-Type '.concat(contentType);
+      if (contentType || headerValue) {
+        message = 'Unsupported Content-Type '.concat(headerValue);
       } else {
         message = 'Media type is not specified';
       }
